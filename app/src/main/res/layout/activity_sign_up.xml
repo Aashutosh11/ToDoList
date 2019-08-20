@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/notepad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:paddingRight="50dp" />
+
+    <EditText
+        android:id="@+id/signupass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/signupemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:paddingRight="50dp" />
+
+    <Button
+        android:id="@+id/user_signup_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/signupass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="Sign up"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/backtologin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:text="back to login"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="All Right Reserved \u00A9 Copyright"
+        android:textStyle="bold" />
+</RelativeLayout>
